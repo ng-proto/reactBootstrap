@@ -11,15 +11,22 @@ class CardView extends Component{
 
     render(){
         return (
-            <div className="CardView card-size card-margin">
-                <div class="card align-left card-top">
-  <h5 class="card-header">Job-Title</h5>
-  <div class="card-body">
-    <h5 class="card-title">Job code - skills</h5>
-    <p class="card-text">Job Descriptions</p>
-  </div>
-</div>
+            <div class="container mt-2">
+            <div class="row">
+            <div class="col">
+            <div class="card">
+                <h5 class="card-header">Featured</h5>
+                <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+                </div>
             </div>
+            
+            </div>
+            </div>
+            
         );
     }
 }

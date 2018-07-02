@@ -6,7 +6,7 @@ class JobSearch extends Component {
     render() {
       return (
         
-        <div className="JobSearch">
+        <div className="container">
           <Search />
           <CardView />
         </div>

@@ -10,25 +10,25 @@ class Search extends Component {
 
     render() {
       return (
-        
-        <div className="Search left-margin">
-        <form>
-          <div class="row">
-           <div class="col-3">
+        <div class="container">
+        <div class="row">
+                 
+           <div class="col-sm">
            <input type="text" class="form-control" placeholder="Job code"/>
            </div>
-           <div class="col-3">
+           <div class="col-sm">
            <input type="text" class="form-control" placeholder="Job Title"/>
            </div>
-           <div class="col-3">
+           <div class="col-sm">
            <input type="text" class="form-control" placeholder="Skill/Technology"/>
            </div>
-           <div class="col-1">
+           <div class="col-sm">
            <button type="button" class="btn btn-secondary" onClick={this.onMessage}>Search</button>
            </div>
-          </div>
-          </form>
+         
         </div>
+        </div>
+        
       );
     }
   }
