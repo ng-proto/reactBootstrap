@@ -10,20 +10,20 @@ class Search extends Component {
 
     render() {
       return (
-        <div class="container">
-        <div class="row">
+        <div className="container">
+        <div className="row">
                  
-           <div class="col-sm">
-           <input type="text" class="form-control" placeholder="Job code"/>
+           <div className="col-sm">
+           <input type="text" className="form-control" placeholder="Job code"/>
            </div>
-           <div class="col-sm">
-           <input type="text" class="form-control" placeholder="Job Title"/>
+           <div className="col-sm">
+           <input type="text" className="form-control" placeholder="Job Title"/>
            </div>
-           <div class="col-sm">
-           <input type="text" class="form-control" placeholder="Skill/Technology"/>
+           <div className="col-sm">
+           <input type="text" className="form-control" placeholder="Skill/Technology"/>
            </div>
-           <div class="col-sm">
-           <button type="button" class="btn btn-secondary" onClick={this.onMessage}>Search</button>
+           <div className="col-sm">
+           <button type="button" className="btn btn-secondary" onClick={this.onMessage}>Search</button>
            </div>
          
         </div>
