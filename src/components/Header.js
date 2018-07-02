@@ -1,6 +1,25 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import Modal from './modal/modal.js';
+import Login from '../containers/login/index.js';
+
 class Header extends Component {
+
+  constructor(props) {
+    super(props);
+console.log(props);
+    this.state = { isOpen: false };
+  }
+
+  toggleModal = () => {
+    console.log(this.state.isOpen)
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+    console.log(this.state.isOpen)
+  }
+
+
     render(){
       return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -23,10 +42,15 @@ class Header extends Component {
             
           </ul>
           <form className="form-inline my-2 my-lg-0">
-            <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
-            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
+      <button className="btn btn-outline-success my-2 my-sm-0" type="button" onClick={this.toggleModal}>Login</button>
+    </form>
+    
+  </div>
+  <Modal show={this.state.isOpen}
+          onClose={this.toggleModal}>
+          <Login />
+        </Modal>
+        
       </nav>
 
       

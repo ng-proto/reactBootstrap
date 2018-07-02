@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header.js';
-import JobSearch from './pages/jobsearch.js';
+import JobSearch from './pages/jobsearch/jobsearch.js';
 import Profile from './components/Profile'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min.js';
@@ -12,7 +12,7 @@ class App extends Component {
   render() {
     return (
       
-      <div>
+      <div className='main'>
         
         <Header />
         <div class="container mt-2">
