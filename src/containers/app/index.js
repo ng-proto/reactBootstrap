@@ -1,14 +1,14 @@
-import React from 'react';
-import { Route } from 'react-router-dom';
-import Header from '../../components/header'
-import Home from '../home';
-import About from '../about';
-import Profile from '../Profile'
-import JobSearch from '../jobsearch'
+import React from "react";
+import { Route } from "react-router-dom";
+import Header from "../../components/Header";
+import Home from "../home";
+import About from "../about";
+import Profile from "../Profile";
+import JobSearch from "../jobsearch";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'jquery/dist/jquery.min.js';
-import 'bootstrap/dist/js/bootstrap.min.js';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "jquery/dist/jquery.min.js";
+import "bootstrap/dist/js/bootstrap.min.js";
 
 const App = () => (
   <div>
