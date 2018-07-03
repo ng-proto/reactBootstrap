@@ -1,5 +1,12 @@
 import React, { Component } from "react";
-
+import { connect } from "react-redux";
+const mapStateToProps = state => ({
+  addJobSearch: check(state)
+});
+function check(data) {
+  console.log(data);
+  return data;
+}
 class JobDetail extends Component {
   constructor(props) {
     super(props);
@@ -19,4 +26,4 @@ class JobDetail extends Component {
   }
 }
 
-export default JobDetail;
+export default connect(mapStateToProps)(JobDetail);

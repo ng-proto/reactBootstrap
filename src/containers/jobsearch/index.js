@@ -1,7 +1,15 @@
 import React, { Component } from "react";
+
+import { connect } from "react-redux";
+import { addJobSearch } from "../../actions/jobsearchAction";
+
 import Search from "../../components/search/index";
 import CardView from "../../components/card/index";
-
+const mapDispatchToProps = dispatch => {
+  return {
+    addJobSearch: jobsearch => dispatch(addJobSearch(jobsearch))
+  };
+};
 class JobSearch extends Component {
   constructor(props) {
     super(props);
@@ -56,10 +64,13 @@ class JobSearch extends Component {
   }
 
   viewJobDetail(e, val) {
-    if (e.target.innerHTML !== "Apply") {
+    console.log(e.target.innerHTML);
+    if (e.target.innerHTML == "Apply") {
       let detail = this.state.selectedJob;
       detail = val;
-      this.setState({ selectedJob: detail });
+      console.log(val);
+      this.props.addJobSearch({ jobsearch: detail });
+      //this.setState({ selectedJob: detail });
       this.props.history.push("/jobdetail");
     } else {
       console.log(val);
@@ -241,4 +252,7 @@ class JobSearch extends Component {
   }
 }
 
-export default JobSearch;
+export default connect(
+  null,
+  mapDispatchToProps
+)(JobSearch);
