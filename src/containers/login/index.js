@@ -9,13 +9,13 @@ class Login extends Component {
     };
 
     const btnLeft = {
-      marginLeft: "15%"
+      marginLeft: "45%"
     };
 
     const middleOr = {
       position: "absolute",
       top: "0%",
-      left: "60%",
+      left: "45%",
       borderLeft: "1px solid grey",
       height: "100%"
     };
@@ -67,16 +67,15 @@ class Login extends Component {
             </div>
           </div>
         </div>
-        <div className="row horizontalLine" />
-        <div className="row mt-4">
+        <div className="row mt-2" />
+        <div className="row mt-2">
           <button
             type="button"
-            className="btn btn-outline-success signUp"
+            className="btn btn-outline-success"
             onClick={this.props.onClick}
             style={btnLeft}
           >
-            {/* <Link className="nav-link" to="/signup"> */}
-            <Link className="nav-link" to="/org-role">
+            <Link className="nav-link" to="/signup">
               Sign Up
             </Link>
           </button>

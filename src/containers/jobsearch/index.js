@@ -65,7 +65,7 @@ class JobSearch extends Component {
 
   viewJobDetail(e, val) {
     console.log(e.target.innerHTML);
-    if (e.target.innerHTML !== "Apply") {
+    if (e.target.innerHTML == "Apply") {
       let detail = this.state.selectedJob;
       detail = val;
       console.log(val);
@@ -88,6 +88,7 @@ class JobSearch extends Component {
               jobTitle={val.title}
               jobCode={val.code}
               keySkills={val.Skills}
+              desc = {val.Description}
               detail={e => this.viewJobDetail(e, val)}
             />
           );
@@ -155,98 +156,12 @@ class JobSearch extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <div className="accordion" id="accordionExample">
-              <div className="card">
-                <div
-                  className="card-header"
-                  id="headingOne"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne"
-                >
-                  <h5 className="mb-0">Search Jobs</h5>
-                </div>
-
-                <div
-                  id="collapseOne"
-                  className="collapse show"
-                  aria-labelledby="headingOne"
-                  data-parent="#accordionExample"
-                >
-                  <div className="card-body">
-                    <Search />
-                    {this.listJobSearch()}
-                  </div>
-                </div>
-              </div>
-
-              <div className="card">
-                <div
-                  className="card-header"
-                  id="headingTwo"
-                  data-toggle="collapse"
-                  data-target="#collapseTwo"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  <h5 className="mb-0">Applied Jobs</h5>
-                </div>
-                <div
-                  id="collapseTwo"
-                  className="collapse"
-                  aria-labelledby="headingTwo"
-                  data-parent="#accordionExample"
-                >
-                  <div className="card-body">{this.listJobApplied()}</div>
-                </div>
-              </div>
-              <div className="card">
-                <div
-                  className="card-header"
-                  id="headingThree"
-                  data-toggle="collapse"
-                  data-target="#collapseThree"
-                  aria-expanded="false"
-                  aria-controls="collapseThree"
-                >
-                  <h5 className="mb-0">Recommended Jobs</h5>
-                </div>
-                <div
-                  id="collapseThree"
-                  className="collapse"
-                  aria-labelledby="headingThree"
-                  data-parent="#accordionExample"
-                >
-                  <div className="card-body">{this.listRecommendedJobs()}</div>
-                </div>
-              </div>
-              <div className="card">
-                <div
-                  className="card-header"
-                  id="headingFour"
-                  data-toggle="collapse"
-                  data-target="#collapseFour"
-                  aria-expanded="false"
-                  aria-controls="collapseFour"
-                >
-                  <h5 className="mb-0">Recent Searches</h5>
-                </div>
-                <div
-                  id="collapseFour"
-                  className="collapse"
-                  aria-labelledby="headingFour"
-                  data-parent="#accordionExample"
-                >
-                  <div className="card-body">{this.recentJobSearch()}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div  className="container">
+      <div className="grid">
+        <Search />
+        {this.listJobSearch()}
+        
+      </div>
       </div>
     );
   }

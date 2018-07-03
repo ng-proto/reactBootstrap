@@ -2,11 +2,8 @@
   color: red;
 }
 
-.signup {
-  width: 70%;
-  margin-left: 15%;
-}
-
 .signup .nav-link {
   color: white;
+  width: 70%;
+  margin-left: 15%;
 }

@@ -10,25 +10,18 @@ class Search extends Component {
 
     render() {
       return (
-        <div className="container">
         <div className="row">
-                 
-           <div className="col-sm">
-           <input type="text" className="form-control" placeholder="Job code"/>
-           </div>
-           <div className="col-sm">
-           <input type="text" className="form-control" placeholder="Job Title"/>
-           </div>
-           <div className="col-sm">
-           <input type="text" className="form-control" placeholder="Skill/Technology"/>
-           </div>
-           <div className="col-sm">
-           <button type="button" className="btn btn-secondary" onClick={this.onMessage}>Search</button>
-           </div>
+          <div className="cell-9">
          
+            <div class="form-group">
+                <label>Type Here to search</label>
+                <input type="email" placeholder="Enter email"/>
+                <small class="text-muted">We'll never share your email with anyone else.</small>
+            </div> 
+         
+          </div>
+          <div className="cell-3 pt-6"> <button className="button success" onClick={this.onMessage}>Submit data</button></div>
         </div>
-        </div>
-        
       );
     }
   }

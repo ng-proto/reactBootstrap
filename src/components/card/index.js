@@ -5,17 +5,22 @@ import "./card.css";
 class CardView extends Component {
   render() {
     return (
-      <div className="container mt-2">
+
+      <div className="container">
         <div className="row">
           <div className="col">
-            <div className="card mt-2" onClick={this.props.detail}>
-              <h5 className="card-header">{this.props.jobTitle}</h5>
-              <div className="card-body">
-                <h5 className="card-title">{this.props.jobCode}</h5>
-                <p className="card-text">{this.props.keySkills}</p>
-                <a className="btn btn-primary">Apply</a>
+            <div className="card">
+              <div className="card-header">
+              <h5>{this.props.jobTitle} - {this.props.jobCode}</h5>
+              </div>
+              <div className="card-content p-2">
+                {this.props.desc} - {this.props.keySkills}
+              </div>
+              <div className="card-footer">
+              <button class="button secondary">Apply</button>
               </div>
             </div>
+            
           </div>
         </div>
       </div>
