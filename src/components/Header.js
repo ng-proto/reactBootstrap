@@ -39,17 +39,17 @@ class Header extends Component {
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
               <Link className="nav-link" to="/">
-                Home
+                <h5>Home</h5>
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/Profile">
-                Profile
+                <h5>Profile</h5>
               </Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/jobSearch">
-                Job Search
+                <h5>Job Search</h5>
               </Link>
             </li>
           </ul>
