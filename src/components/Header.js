@@ -21,7 +21,7 @@ class Header extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-dark headerbgColor">
         <Link className="navbar-brand" to="/">
-          <img src={logo} className="brandImg" />
+          <img src={logo} className="brandImg" alt="verizon_logo" />
         </Link>
         <button
           className="navbar-toggler"

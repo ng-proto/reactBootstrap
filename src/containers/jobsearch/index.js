@@ -65,7 +65,7 @@ class JobSearch extends Component {
 
   viewJobDetail(e, val) {
     console.log(e.target.innerHTML);
-    if (e.target.innerHTML != "Apply") {
+    if (e.target.innerHTML !== "Apply") {
       let detail = this.state.selectedJob;
       detail = val;
       console.log(val);
