@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Myinfo from "./Myinfo";
 import Workexp from "./Workexp";
 import Education from "./Education";
+import UploadDocs from "./Uploadfile";
 class Profile extends Component {
   render() {
     return (
@@ -96,6 +97,28 @@ class Profile extends Component {
                 >
                   <div className="card-body">
                     <Workexp />
+                  </div>
+                </div>
+              </div>
+              <div className="card">
+                <div
+                  className="card-header"
+                  id="headingFive"
+                  data-toggle="collapse"
+                  data-target="#collapseFive"
+                  aria-expanded="false"
+                  aria-controls="collapseFive"
+                >
+                  <h5 className="mb-0">Upload Resume</h5>
+                </div>
+                <div
+                  id="collapseFive"
+                  className="collapse"
+                  aria-labelledby="headingFive"
+                  data-parent="#accordionExample"
+                >
+                  <div className="card-body">
+                    <UploadDocs />
                   </div>
                 </div>
               </div>
