@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Modal from "./modal/modal.js";
 import Login from "../containers/login/index";
+import logo from "../img/logo.png";
+import "./header.css";
 
 class Header extends Component {
   constructor(props) {
@@ -17,9 +19,9 @@ class Header extends Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <nav className="navbar navbar-expand-lg navbar-dark headerbgColor">
         <Link className="navbar-brand" to="/">
-          Navbar
+          <img src={logo} className="brandImg" />
         </Link>
         <button
           className="navbar-toggler"
