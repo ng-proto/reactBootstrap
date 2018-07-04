@@ -2,7 +2,7 @@ import React, { Component } from "react";
 class Myinfo extends Component {
   render() {
     return (
-      <div className="container">
+      <div className="container p-5">
         <div className="row">
           <div className="cell-4">
             <div className="form-group">

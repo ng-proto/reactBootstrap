@@ -60,11 +60,7 @@ class sideNav extends Component {
               <span className="mif-books icon" />Guide
             </a>
           </li>
-          <li>
-            <a>
-              <span className="mif-files-empty icon" />Examples
-            </a>
-          </li>
+
           <li className="divider" />
           <li>
             <a>

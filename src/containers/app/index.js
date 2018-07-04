@@ -9,6 +9,10 @@ import JobSearch from "../jobsearch";
 import SignUp from "../signup/index";
 import JobDetail from "../jobdetails/index";
 import Dashboard from "../dashboard";
+import OrgRole from "../Orgrole";
+import CreateJob from "../createjob";
+import PendingApprovals from "../pending/index";
+import Applications from "../applications/index";
 
 import "metro4/build/css/metro-all.css";
 import "metro4/build/js/metro.js";
@@ -27,7 +31,11 @@ const App = () => (
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/jobSearch" component={JobSearch} />
           <Route exact path="/signup" component={SignUp} />
+          <Route exact path="/OrgRole" component={OrgRole} />
           <Route exact path="/jobdetail" component={JobDetail} />
+          <Route exact path="/CreateJob" component={CreateJob} />
+          <Route exact path="/PendingApprovals" component={PendingApprovals} />
+          <Route exact path="/Applications" component={Applications} />
         </main>
       </div>
     </div>
