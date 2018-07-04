@@ -33,7 +33,7 @@ class sideNav extends Component {
         <ul className="sidebar-menu">
           <li>
             <Link to="/dashoboard">
-              <span className="mif-home icon" />
+              <span className="mif-chart-bars icon" />
               Dashboard
             </Link>
           </li>
@@ -45,27 +45,27 @@ class sideNav extends Component {
           </li>
           <li>
             <Link to="/jobSearch">
-              <span className="mif-home icon" />
+              <span className="mif-language icon" />
               Jobs Search
             </Link>
           </li>
           <li>
             <Link to="/profile">
-              <span className="mif-home icon" />
+              <span className="mif-profile icon" />
               My Profile
             </Link>
           </li>
           <li>
-            <a>
-              <span className="mif-books icon" />Guide
-            </a>
+            <Link to="/Interviewer">
+              <span className="mif-filter icon" />My Schedules
+            </Link>
           </li>
 
           <li className="divider" />
           <li>
-            <a>
-              <span className="mif-images icon" />Icons
-            </a>
+            <Link to="/CreateJob">
+              <span className="mif-create-new-folder icon" />Create Jobs
+            </Link>
           </li>
         </ul>
       </aside>

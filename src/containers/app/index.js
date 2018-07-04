@@ -13,6 +13,7 @@ import OrgRole from "../Orgrole";
 import CreateJob from "../createjob";
 import PendingApprovals from "../pending/index";
 import Applications from "../applications/index";
+import Interviewer from "../interviewer/index";
 
 import "metro4/build/css/metro-all.css";
 import "metro4/build/js/metro.js";
@@ -36,6 +37,7 @@ const App = () => (
           <Route exact path="/CreateJob" component={CreateJob} />
           <Route exact path="/PendingApprovals" component={PendingApprovals} />
           <Route exact path="/Applications" component={Applications} />
+          <Route exact path="/Interviewer" component={Interviewer} />
         </main>
       </div>
     </div>

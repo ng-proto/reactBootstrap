@@ -90,6 +90,45 @@ class CreateJob extends Component {
               />
             </div>
             <div className="input-group mb-3">
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Education Qualifications"
+              />
+            </div>
+            <div className="input-group mb-3">
+              <button class="button" id="dropdown_toggle_1">
+                Assign Human Resource
+              </button>
+              <div class="pos-relative">
+                <div
+                  class="bg-red fg-white"
+                  data-role="dropdown"
+                  data-toggle-element="#dropdown_toggle_1"
+                >
+                  <p class="p-2 text-center">Bruce Wayne</p>
+                  <p class="p-2 text-center">Martha Wayne</p>
+                  <p class="p-2 text-center">Thomas Wayne</p>
+                </div>
+              </div>
+            </div>
+            <div className="input-group mb-3">
+              <button class="button" id="dropdown_toggle_1">
+                Assign Interviewer
+              </button>
+              <div class="pos-relative">
+                <div
+                  class="bg-red fg-white"
+                  data-role="dropdown"
+                  data-toggle-element="#dropdown_toggle_1"
+                >
+                  <p class="p-2 text-center">Bruce Banner</p>
+                  <p class="p-2 text-center">Tony Stark</p>
+                  <p class="p-2 text-center">Peter Parker</p>
+                </div>
+              </div>
+            </div>
+            <div className="input-group mb-3">
               <button type="button" className="button success">
                 Create Job
               </button>
