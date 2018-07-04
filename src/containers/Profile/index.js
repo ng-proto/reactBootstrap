@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Myinfo from "./Myinfo";
 import Workexp from "./Workexp";
 import Education from "./Education";
+import UploadDocs from "./Uploadfile";
 class Profile extends Component {
   render() {
     return (
@@ -38,9 +39,9 @@ class Profile extends Component {
                 </div>
               </div>
               <div className="frame">
-                <div className="heading">Licenses / Certifications</div>
+                <div className="heading">Upload resume</div>
                 <div className="content">
-                  <Workexp />
+                  <UploadDocs />
                 </div>
               </div>
             </div>
