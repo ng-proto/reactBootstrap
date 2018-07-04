@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MultiSelectField from "../../components/MultiValue";
 class Myinfo extends Component {
   render() {
     return (
@@ -109,6 +110,12 @@ class Myinfo extends Component {
                 <option>5</option>
               </select>
             </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="cell">
+            <label>Skills</label>
+            <MultiSelectField />
           </div>
         </div>
       </div>
