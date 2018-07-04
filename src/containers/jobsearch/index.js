@@ -24,6 +24,19 @@ class JobSearch extends Component {
 
   componentDidMount() {
     console.log("called in lifecycle");
+    /* fetch('http://localhost:4000/post', { 
+      method: 'POST',
+      data: {
+        name: "prakash",
+        job: "vetti"
+      }
+    })
+    .then(function(response) {
+      console.log(response);
+      return response.json()
+    }).then(function(body) {
+      console.log(body);
+    }); */
     var items = [
       {
         code: "10332",
@@ -88,7 +101,7 @@ class JobSearch extends Component {
               jobTitle={val.title}
               jobCode={val.code}
               keySkills={val.Skills}
-              desc = {val.Description}
+              desc={val.Description}
               detail={e => this.viewJobDetail(e, val)}
             />
           );
@@ -156,12 +169,11 @@ class JobSearch extends Component {
 
   render() {
     return (
-      <div  className="container">
-      <div className="grid">
-        <Search />
-        {this.listJobSearch()}
-        
-      </div>
+      <div className="container">
+        <div className="grid">
+          <Search />
+          {this.listJobSearch()}
+        </div>
       </div>
     );
   }

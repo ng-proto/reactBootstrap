@@ -1,7 +1,7 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import Header from "../../components/Header";
-import SideNav from '../../components/sidenav/sidenav'
+import SideNav from "../../components/sidenav/sidenav";
 import Home from "../home";
 import About from "../about";
 import Profile from "../Profile";
@@ -21,7 +21,7 @@ const App = () => (
       <Header />
       <div class="h-100 p-4">
         <main className="container mt-2">
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" component={JobSearch} />
           <Route exact path="/dashoboard" component={Dashboard} />
           <Route exact path="/about-us" component={About} />
           <Route exact path="/profile" component={Profile} />
@@ -30,9 +30,7 @@ const App = () => (
           <Route exact path="/jobdetail" component={JobDetail} />
         </main>
       </div>
-      
     </div>
-    
   </div>
 );
 

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Modal from "./modal/modal.js";
 import Login from "../containers/login/index";
 import logo from "../img/logo.png";
-import './header.css'
+import "./header.css";
 
 class Header extends Component {
   constructor(props) {
@@ -19,9 +19,9 @@ class Header extends Component {
 
   render() {
     return (
-      <div class="app-bar pos-absolute bg-red z-1" data-role="appbar">
-        <button class="app-bar-item c-pointer" id="sidebar-toggle-3">
-            <span class="mif-menu fg-white"></span>
+      <div className="app-bar pos-absolute bg-red z-1" data-role="appbar">
+        <button className="app-bar-item c-pointer" id="sidebar-toggle-3">
+          <span className="mif-menu fg-white" />
         </button>
       </div>
     );
