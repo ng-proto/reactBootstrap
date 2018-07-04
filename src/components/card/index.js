@@ -35,7 +35,7 @@ class CardView extends Component {
                         data-role="stepper"
                         data-steps="5"
                         class="w-100"
-                        data-step="3"
+                        data-step="4"
                       />
                     </div>
                   </div>

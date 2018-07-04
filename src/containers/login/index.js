@@ -21,6 +21,20 @@ class Login extends Component {
       borderLeft: "1px solid grey",
       height: "100%"
     };
+    fetch("http://10.74.19.37:3000/auth", {
+      method: "POST",
+      data: {
+        email: "p@v.com",
+        password: "p123"
+      }
+    })
+      .then(function(response) {
+        console.log(response);
+        return response.json();
+      })
+      .then(function(body) {
+        console.log(body);
+      });
     return (
       <div className="container">
         <label>
@@ -39,7 +53,17 @@ class Login extends Component {
                   <input type="password" placeholder="Enter email" />
                 </div>
                 <div class="form-group">
-                  <button class="button success">Submit data</button>
+                  <button class="button success">Login</button>
+                  <button
+                    type="button"
+                    className="button success  "
+                    onClick={this.props.onClick}
+                    style={btnLeft}
+                  >
+                    <Link className="nav-link fg-white" to="/signup">
+                      Sign Up
+                    </Link>
+                  </button>
                 </div>
               </form>
             </div>
@@ -61,18 +85,7 @@ class Login extends Component {
                 <div className="row text-center">
                   <h4 className="text-center orBtn">Or</h4>
                 </div>
-                <div className="row">
-                  <button
-                    type="button"
-                    className="button primary  "
-                    onClick={this.props.onClick}
-                    style={btnLeft}
-                  >
-                    <Link className="nav-link fg-white" to="/signup">
-                      Sign Up
-                    </Link>
-                  </button>
-                </div>
+                <div className="row" />
               </div>
             </div>
           </div>

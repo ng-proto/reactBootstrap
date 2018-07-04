@@ -24,19 +24,7 @@ class JobSearch extends Component {
 
   componentDidMount() {
     console.log("called in lifecycle");
-    /* fetch('http://localhost:4000/post', { 
-      method: 'POST',
-      data: {
-        name: "prakash",
-        job: "vetti"
-      }
-    })
-    .then(function(response) {
-      console.log(response);
-      return response.json()
-    }).then(function(body) {
-      console.log(body);
-    }); */
+
     var items = [
       {
         code: "10332",
