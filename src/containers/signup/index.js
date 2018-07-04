@@ -7,7 +7,7 @@ class SignUp extends Component {
       <div className="container">
         <h3 className="text-center"> Sign Up</h3>
         <div className="row">
-          <div className="col-sm">
+          <div className="cell-6">
             <label htmlFor="first-name">
               First name<span className="imp">*</span> :{" "}
             </label>
@@ -90,10 +90,10 @@ class SignUp extends Component {
             <div className="input-group mb-3">
               <button
                 type="button"
-                className="btn btn-success signup"
+                className="button success"
                 onClick={this.props.onClick}
               >
-                <Link className="nav-link" to="/profile">
+                <Link className="nav-link fg-white" to="/profile">
                   Sign Up
                 </Link>
               </button>

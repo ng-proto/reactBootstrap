@@ -9,7 +9,9 @@ class Login extends Component {
     };
 
     const btnLeft = {
-      marginLeft: "45%"
+      marginLeft: "20%",
+      width: "48%",
+      "border-radius": "2px"
     };
 
     const middleOr = {
@@ -21,64 +23,59 @@ class Login extends Component {
     };
     return (
       <div className="container">
-        <h3 className="text-center">Login</h3>
-        <div className="row mt-6">
-          <div className="col-sm">
-            <div className="row">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Email/Mobile Number"
-              />
+        <label>
+          <h5>Login</h5>
+        </label>
+        <div class="grid">
+          <div class="row border-bottom bd-cyan pb-2">
+            <div class="cell-6 border-right bd-cyan">
+              <form>
+                <div class="form-group">
+                  <label>Email address</label>
+                  <input type="email" placeholder="Enter email" />
+                </div>
+                <div class="form-group">
+                  <label>Password</label>
+                  <input type="password" placeholder="Enter email" />
+                </div>
+                <div class="form-group">
+                  <button class="button success">Submit data</button>
+                </div>
+              </form>
             </div>
-            <div className="row mt-2">
-              <input
-                type="password"
-                className="form-control"
-                placeholder="Password"
-              />
-            </div>
-            <div className="row mt-2">
-              <button
-                type="button"
-                className="btn btn-success"
-                style={btnWidth}
-              >
-                Sign In
-              </button>
+            <div class="cell-6">
+              <div className="grid">
+                <div className="row">
+                  <button className="loginBtn loginBtn--google">
+                    Login with Google
+                  </button>
+                </div>
+                <div className="row text-center">
+                  <h4 className="text-center orBtn">Or</h4>
+                </div>
+                <div className="row">
+                  <button className="loginBtn loginBtn--linkedin">
+                    Login with Linkedin
+                  </button>
+                </div>
+                <div className="row text-center">
+                  <h4 className="text-center orBtn">Or</h4>
+                </div>
+                <div className="row">
+                  <button
+                    type="button"
+                    className="button primary  "
+                    onClick={this.props.onClick}
+                    style={btnLeft}
+                  >
+                    <Link className="nav-link fg-white" to="/signup">
+                      Sign Up
+                    </Link>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="col-1">
-            <div style={middleOr} />
-          </div>
-          <div className="col-sm">
-            <div className="row">
-              <button className="loginBtn loginBtn--google">
-                Login with Google
-              </button>
-            </div>
-            <div className="row text-center">
-              <h4 className="text-center orBtn">Or</h4>
-            </div>
-            <div className="row">
-              <button className="loginBtn loginBtn--linkedin">
-                Login with Linkedin
-              </button>
-            </div>
-          </div>
-        </div>
-        <div className="row mt-2" />
-        <div className="row mt-2">
-          <button
-            type="button"
-            className="btn btn-outline-success"
-            onClick={this.props.onClick}
-            style={btnLeft}
-          >
-            <Link className="nav-link" to="/signup">
-              Sign Up
-            </Link>
-          </button>
         </div>
       </div>
     );
